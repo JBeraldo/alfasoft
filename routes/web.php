@@ -15,4 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [SiteController::class, 'index']);
+Route::get('create/{id}', [SiteController::class, 'edit']);
 Route::get('create', [SiteController::class, 'create']);

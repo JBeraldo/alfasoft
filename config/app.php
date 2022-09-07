@@ -166,6 +166,9 @@ return [
          * Package Service Providers...
          */
 
+        //Custom Providers
+        App\Modules\Contacts\Providers\ContactServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
