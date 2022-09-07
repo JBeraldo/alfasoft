@@ -2,6 +2,9 @@
     
 @section('content')
     <div class="container">
+        <a href="{{ url('create') }}" class="btn btn-success">
+            Adicionar
+        </a>
         <div class="list">
             <div class="row">
                 <div class="col-md-12">

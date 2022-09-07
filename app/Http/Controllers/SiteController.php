@@ -11,4 +11,8 @@ class SiteController extends Controller
     {
         return view('index.index');
     }
+    public function create()
+    {
+        return view('create.index');
+    }
 }
