@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use App\Models\Contact;
+use App\Modules\Contacts\Contact;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
 class ContactFactory extends Factory
@@ -11,7 +11,7 @@ class ContactFactory extends Factory
     {
         return \Faker\Factory::create('pt_PT');
     }
-        /**
+    /**
      * The name of the factory's corresponding model.
      *
      * @var string
@@ -27,7 +27,7 @@ class ContactFactory extends Factory
         return [
             'name' => $this->faker->name(),
             'contact' => $this->faker->numerify('#########'),
-            'email' => $this->faker->safeEmail()
+            'email' => $this->faker->safeEmail(),
         ];
     }
 }
